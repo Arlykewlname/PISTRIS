@@ -1,13 +1,14 @@
 # This is the main file
 import pygame
 
-#Screen Variables
+# Screen Variables
 WIDTH, HEIGHT = 900, 500
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("PISTIS")
+pygame.display.set_caption("PISTRIS")
 
-SCREEN_COLOR = (255,255,255) #White
-FPS = 60 #Frames Per Second
+SCREEN_COLOR = (255, 255, 255)  # White
+FPS = 60  # Frames Per Second
+
 
 def draw_window():
     WIN.fill(SCREEN_COLOR)
@@ -24,6 +25,7 @@ def main():
                 run = False
         draw_window()
     pygame.quit()
+
 
 if __name__ == "__main__":
     main()
